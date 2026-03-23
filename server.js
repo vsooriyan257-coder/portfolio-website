@@ -7,7 +7,9 @@ const app = express();
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
-
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
+});
 // Connect to MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/portfolioDB')
 .then(() => console.log("MongoDB Connected"))
