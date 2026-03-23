@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>V Sooriyan | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0f1f;
+            color: white;
+        }
+
+        nav {
+            background-color: #000814;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #00b4ff;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(to right, #001d3d, #003566);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid #00b4ff;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background: #001d3d;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #00b4ff;
+            text-align: center;
+        }
+
+        /* Side-by-side layout */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            text-align: center;
+            width: 250px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            border-radius: 10px;
+            border: 2px solid #00b4ff;
+            margin-top: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #000814;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #00b4ff;
+            background: #0a1a3a;
+            color: white;
+            font-size: 16px;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #a0c0ff;
+        }
+
+        button {
+            padding: 12px;
+            background: #00b4ff;
+            color: #000814;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0099dd;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+    <h1>V Sooriyan</h1>
+    <p><strong>Aspiring BCA Graduate in Cybersecurity</strong></p>
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+         alt="Cybersecurity">
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center;">
+        I'm Sooriyan, a passionate student with strong interest in programming,
+        web development and learning new technologies. This website is a small
+        project of mine as a portfolio.
+    </p>
+
+    <p style="text-align:center;">
+        I enjoy improving my technical skills through regular practice and small projects.
+        I am especially interested in cybersecurity and understanding how systems
+        can be protected from threats.
+    </p>
+
+    <p style="text-align:center;">
+        I believe in continuous learning and staying updated with new tools and
+        technologies in the IT field.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Sketching</h3>
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
+                 alt="Sketching">
+        </div>
+
+        <div class="card">
+            <h3>Programming</h3>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                 alt="Programming">
+        </div>
+
+    </div>
+</section>
+
+<section id="hobbies">
+    <h2>My Hobbies</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Gaming</h3>
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                 alt="Gaming">
+        </div>
+
+        <div class="card">
+            <h3>Movies</h3>
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+                 alt="Movies">
+        </div>
+
+        <div class="card">
+            <h3>Learning New Technologies</h3>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                 alt="Learning Tech">
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    
+    <form action="https://formspree.io/f/mnjgkwak" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p style="text-align:center; margin-top: 25px;">
+        📧 25bcyc53@kristujayanti.com
+    </p>
+    <p style="text-align:center;">
+        📱 7490247781
+    </p>
+</section>
+
+<footer>
+    © 2026 V Sooriyan | All Rights Reserved
+</footer>
+
+</body>
+</html>
